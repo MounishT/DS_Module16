@@ -1,81 +1,115 @@
-# Ex 4E AVL Tree - Deletion
-## DATE: 19/04/2025
+# Ex20 Sorting an Array using Merge Sort Algorithm
 ## AIM:
-To write a C function to delete an element from an AVL Tree.
+To design a program that sorts a given array of integers in ascending order without using built-in sorting functions, achieving O(n log n) time complexity and minimal space usage.
 ## Algorithm
-1. Search for the node to delete starting from the root.
-2. Delete the node using standard BST rules.
-3. Update the height of the affected nodes.
-4. Calculate the balance factor of each updated node.
-5. Perform rotations if the node is unbalanced.
-6. Continue until the tree is balanced again.
+1. Start the program.
+2. Read the size of the array and input its elements.
+3. Use the merge sort function:
    
+   Divide the array into two halves recursively until each sub-array has one element.
+
+4. Merge the sorted halves:
+ 
+   Compare the elements of both halves
+
+5. Insert the smallest element into the new array and continue until both halves are merged.
+
+6. Print the sorted array.
+
+7. Stop the program.  
 
 ## Program:
 ```
 /*
-Program to find and display the priority of the operator in the given Postfix expression
+Program tosorts a given array of integers in ascending order without using built-in sorting functions
 Developed by:T MOUNISH
 RegisterNumber: 212223240098
 */
-node * Delete(node *T,int x)
-{
-node *p;
-if(T==NULL)
-{
-return NULL;
-}
-else
-if(x > T->data) // insert in right subtree
-{
-T->right=Delete(T->right,x);
-if(BF(T)==2)
-{
-if(BF(T->left)>=0)
-T=LL(T);
-else
-T=LR(T);
-}}
-else
-if(x<T->data)
-{
-T->left=Delete(T->left,x);
-if(BF(T)==-2) //Rebalance during windup
-{
-if(BF(T->right)<=0)
-T=RR(T);
-else
-T=RL(T);
-}}
-else
-{
-//data to be deleted is found
-if(T->right!=NULL)
-{ //delete its inorder succesor
-p=T->right;
-while(p->left!= NULL)
-p=p->left;
-T->data=p->data;
-T->right=Delete(T->right,p->data);
-if(BF(T)==2)//Rebalance during windup
-{
-if(BF(T->left)>=0)
-T=LL(T);
-else
-T=LR(T);}}
-else
-return(T->left);
-}
-T->ht=height(T);
-return(T);
-}
+import java.util.*;
 
+public class MergeSort {
+    
+    // Merge function
+    public static void merge(int arr[], int left, int mid, int right) {
+        int n1 = mid - left + 1;
+        int n2 = right - mid;
+
+        int L[] = new int[n1];
+        int R[] = new int[n2];
+
+        for (int i = 0; i < n1; ++i)
+            L[i] = arr[left + i];
+
+        for (int j = 0; j < n2; ++j)
+            R[j] = arr[mid + 1 + j];
+
+        int i = 0, j = 0;
+        int k = left;
+
+        while (i < n1 && j < n2) {
+            if (L[i] <= R[j]) {
+                arr[k] = L[i];
+                i++;
+            } else {
+                arr[k] = R[j];
+                j++;
+            }
+            k++;
+        }
+
+        while (i < n1) {
+            arr[k] = L[i];
+            i++;
+            k++;
+        }
+
+        while (j < n2) {
+            arr[k] = R[j];
+            j++;
+            k++;
+        }
+    }
+
+    // Merge Sort function
+    public static void mergeSort(int arr[], int left, int right) {
+        if (left < right) {
+            int mid = (left + right) / 2;
+
+            mergeSort(arr, left, mid);
+            mergeSort(arr, mid + 1, right);
+            merge(arr, left, mid, right);
+        }
+    }
+
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of elements: ");
+        int n = sc.nextInt();
+
+        int arr[] = new int[n];
+        System.out.println("Enter elements:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        mergeSort(arr, 0, n - 1);
+
+        System.out.println("Sorted Array:");
+        for (int x : arr)
+            System.out.print(x + " ");
+        System.out.println();
+
+        sc.close();
+    }
+}
 ```
 
 ## Output:
 
-![image](https://github.com/user-attachments/assets/b8b63e15-71e3-44f8-b1f0-1c0579672b6b)
+
+<img width="403" height="358" alt="image" src="https://github.com/user-attachments/assets/c9801b53-ac21-4a55-86bf-673b32e45a9b" />
 
 
 ## Result:
-Thus, the C program to delete an element from an AVL Tree is implemented successfully.
+The program has been successfully implemented and executed.
+It sorts the given array of integers in ascending order using the Merge Sort algorithm with a time complexity of O(n log n) and minimal extra space.
