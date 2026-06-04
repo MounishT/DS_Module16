@@ -47,7 +47,7 @@ public class ReverseStringStack {
 
 ## Output:
 
-<img width="359" height="191" alt="image" src="https://github.com/user-attachments/assets/e8768088-fee0-4643-a6d0-351fdc34d956" />
+<img width="467" height="339" alt="image" src="https://github.com/user-attachments/assets/72544616-7bcf-4f0a-8680-405d34772b84" />
 
 
 ## Result:
