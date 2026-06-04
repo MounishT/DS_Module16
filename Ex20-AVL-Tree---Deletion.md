@@ -107,7 +107,7 @@ public class MergeSort {
 ## Output:
 
 
-<img width="403" height="358" alt="image" src="https://github.com/user-attachments/assets/c9801b53-ac21-4a55-86bf-673b32e45a9b" />
+<img width="620" height="297" alt="image" src="https://github.com/user-attachments/assets/a59de798-48be-4bb0-976f-fcb5bac1a2a8" />
 
 
 ## Result:
