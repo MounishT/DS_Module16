@@ -63,7 +63,7 @@ public class BalancedParentheses {
 ```
 
 ## Output:
-<img width="384" height="184" alt="image" src="https://github.com/user-attachments/assets/f3fdc3af-a202-414e-812c-c9b9cad3f518" />
+<img width="443" height="361" alt="image" src="https://github.com/user-attachments/assets/37bcf4b3-651c-43a2-957a-1eefd1c4bb02" />
 
 
 
@@ -122,7 +122,7 @@ public class ReverseStringStack {
 
 ## Output:
 
-<img width="359" height="191" alt="image" src="https://github.com/user-attachments/assets/e8768088-fee0-4643-a6d0-351fdc34d956" />
+<img width="467" height="339" alt="image" src="https://github.com/user-attachments/assets/72544616-7bcf-4f0a-8680-405d34772b84" />
 
 
 ## Result:
@@ -216,7 +216,7 @@ public class TicketCounter {
 
 
 
-<img width="950" height="125" alt="image" src="https://github.com/user-attachments/assets/249e6147-26dc-49ce-86d8-811bdb9a9839" />
+<img width="1245" height="842" alt="image" src="https://github.com/user-attachments/assets/63852653-5138-4552-b9d7-ff8dff571edf" />
 
 ## Result:
 Thus, the program successfully simulates a ticket counter queue where customers are served in FIFO order using a linked list-based queue implementation.
@@ -285,7 +285,7 @@ public class PalindromeDeque {
 ## Output:
 
 
-<img width="379" height="186" alt="image" src="https://github.com/user-attachments/assets/29dade87-5913-4f49-a524-8d938f668aa6" />
+<img width="459" height="252" alt="image" src="https://github.com/user-attachments/assets/51be7ab8-3e5b-44d1-a74d-6a63a9c2ed34" />
 
 
 ## Result:
@@ -401,7 +401,7 @@ public class MergeSort {
 ## Output:
 
 
-<img width="403" height="358" alt="image" src="https://github.com/user-attachments/assets/c9801b53-ac21-4a55-86bf-673b32e45a9b" />
+<img width="620" height="297" alt="image" src="https://github.com/user-attachments/assets/a59de798-48be-4bb0-976f-fcb5bac1a2a8" />
 
 
 ## Result:
