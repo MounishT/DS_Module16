@@ -61,7 +61,7 @@ public class PalindromeDeque {
 ## Output:
 
 
-<img width="379" height="186" alt="image" src="https://github.com/user-attachments/assets/29dade87-5913-4f49-a524-8d938f668aa6" />
+<img width="459" height="252" alt="image" src="https://github.com/user-attachments/assets/51be7ab8-3e5b-44d1-a74d-6a63a9c2ed34" />
 
 
 ## Result:
