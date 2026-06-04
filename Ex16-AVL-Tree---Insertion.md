@@ -63,7 +63,7 @@ public class BalancedParentheses {
 ```
 
 ## Output:
-<img width="384" height="184" alt="image" src="https://github.com/user-attachments/assets/f3fdc3af-a202-414e-812c-c9b9cad3f518" />
+<img width="443" height="361" alt="image" src="https://github.com/user-attachments/assets/37bcf4b3-651c-43a2-957a-1eefd1c4bb02" />
 
 
 
